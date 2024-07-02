@@ -214,7 +214,7 @@ button:hover {
     margin: 0;
   }
   
-  .contact-section {
+  .contact-section-web {
     width: 100%;
     height: 90vh;
     display: flex;
@@ -224,6 +224,18 @@ button:hover {
     background-color: #0D1117;
     color: white;
     font-family: Arial, sans-serif;
+}
+
+.contact-section-2 {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D1117;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 .contact-section h2 {
@@ -577,14 +589,23 @@ textarea {
 .copyright {
   color: white;
 }
-
+.glass-section
+{
+  display: none;
+}
+/* Adaptation for smaller screen */
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+.contact-section-mobile {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .flex-wrapper {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding-top: 20px;
+     
       height: 100vh !important; /* Adjust height to auto for proper content spacing */
   }
 
@@ -611,7 +632,6 @@ textarea {
 
   /* Second section adjustments */
   .second {
-      padding: 20px;
       min-height: 170vh; /* Ensure minimum height to prevent collapsing */
       align-items: center;
       text-align: center;
@@ -680,8 +700,7 @@ textarea {
 }
 
 .contact-section {
-  padding: 20px;
-  min-height: auto; /* Adjust height to auto for proper content spacing */
+  min-height: 110vh; /* Adjust height to auto for proper content spacing */
 }
 
 .glassmorphism {
@@ -744,4 +763,130 @@ textarea {
   color: #50fa7b;
 }
 
+.contact-section-2 {
+  display: none;
 }
+.glass-section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D1117;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+ .glass {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 750px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: background 0.3s ease, transform 0.1s ease;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .circle1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .first-glass .text {
+            margin-left: 10px;
+        }
+
+        .second-glass .text {
+            margin-left: 10px;
+        }
+  
+        .contact-section-web {
+         display: none;
+      }
+
+      .contact-section-mobile {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0D1117;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    
+    .contact-section h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        gap: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        background: none;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        height: 100px;
+        resize: none;
+        margin-bottom: 10px;
+    }
+    
+    .contact-btn {
+        padding: 10px 20px;
+        color: white;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        width: auto;
+    }
+    
+    .contact-btn:hover {
+        background-color: #0056b3;
+    }
+      
+    }
