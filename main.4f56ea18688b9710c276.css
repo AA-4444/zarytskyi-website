@@ -579,16 +579,17 @@ textarea {
 }
 
 
-
 @media (max-width: 768px) {
   .flex-wrapper {
       flex-direction: column;
+      align-items: center;
+      text-align: center;
       padding-top: 20px;
-      height: 1200vh !important; /* Adjust height to auto for proper content spacing */
+      height: 100vh !important; /* Adjust height to auto for proper content spacing */
   }
 
   #scene-container {
-      height: 40%; /* Adjust the height for the scene container on mobile */
+      height: 20%; /* Adjust the height for the scene container on mobile */
   }
 
   h1 {
@@ -612,6 +613,9 @@ textarea {
   .second {
       padding: 20px;
       min-height: 170vh; /* Ensure minimum height to prevent collapsing */
+      align-items: center;
+      text-align: center;
+      
   }
 
   .second h2 {
@@ -621,13 +625,14 @@ textarea {
 
   .section-content {
       flex-direction: column; /* Stack cards vertically */
-      align-items: center;
       width: 100%; /* Full width for mobile */
+     
   }
 
   .glassmorphism-card {
-      width: 90%; /* Full width for mobile */
+      width: 80%; /* Full width for mobile */
       margin-bottom: 20px; /* Add margin between cards */
+      
   }
 
   .glassmorphism-card h1 {
@@ -640,10 +645,103 @@ textarea {
 
   /* Add margin between sections to prevent collapsing */
   .third-section {
-      margin-top: 20px;
-  }
+    min-height: 110vh; /* Ensure minimum height to prevent collapsing */
+   text-align: center;
+   align-items: center;
+}
 
-  .contact-section {
-      margin-top: 20px;
-  }
+.third-section h2 {
+    font-size: 1.4rem; /* Smaller font size for mobile */
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* Gap between items */
+    width: 100%; /* Full width for mobile */
+}
+
+.grid-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 50px; /* Smaller image size for mobile */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    color: white;
+    margin: 0;
+}
+
+.contact-section {
+  padding: 20px;
+  min-height: auto; /* Adjust height to auto for proper content spacing */
+}
+
+.glassmorphism {
+  width: 80%; /* Full width for mobile */
+  height: auto; /* Adjust height for proper content spacing */
+  padding: 10px;
+}
+
+.title-bar {
+  padding: 5px;
+}
+
+.title-bar .buttons .button {
+  width: 8px; /* Smaller button size */
+  height: 8px; /* Smaller button size */
+}
+
+.title-bar .filename {
+  font-size: 0.9rem; /* Smaller font size for filename */
+}
+
+.code-container {
+  display: flex;
+  height: auto;
+}
+
+.line-numbers {
+  padding-right: 5px;
+  text-align: right;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem; /* Smaller font size for line numbers */
+}
+
+.code {
+  color: #ffffff;
+  white-space: pre-wrap; /* Allow text to wrap */
+  font-size: 0.8rem; /* Smaller font size for code */
+  line-height: 1.5;
+  padding-left: 10px; /* Adjust padding to align code properly */
+}
+
+.code .keyword {
+  color: #ff79c6;
+}
+
+.code .string {
+  color: #f1fa8c;
+}
+
+.code .number {
+  color: #bd93f9;
+}
+
+.code .type {
+  color: #8be9fd;
+}
+
+.code .function {
+  color: #50fa7b;
+}
+
 }
