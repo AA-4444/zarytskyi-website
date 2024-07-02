@@ -577,3 +577,61 @@ textarea {
 .copyright {
   color: white;
 }
+
+@media (max-width: 768px) {
+  .flex-wrapper {
+      flex-direction: column;
+      padding-top: 20px;
+  }
+
+  #scene-container {
+      height: 40%; /* Adjust the height for the scene container on mobile */
+  }
+
+  h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+      text-align: center;
+  }
+
+  p {
+      font-size: 16px; /* Smaller font size for mobile */
+      text-align: center;
+      margin: 10px 20px;
+  }
+
+  .rounded-button {
+      padding: 10px 20px; /* Smaller button padding */
+      font-size: 14px; /* Smaller button font size */
+      margin-top: 10px; /* Add margin for spacing */
+  }
+
+    /* Second section adjustments */
+    .second {
+      padding: 20px;
+  }
+
+  .second h2 {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+      text-align: center;
+  }
+
+  .section-content {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center;
+  }
+
+  .glassmorphism-card {
+      width: 90%; /* Full width for mobile */
+      margin-bottom: 20px; /* Add margin between cards */
+  }
+
+  .glassmorphism-card h1 {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .glassmorphism-card p {
+      font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+}
+
