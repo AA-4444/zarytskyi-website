@@ -608,7 +608,6 @@ textarea {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     overflow-x: hidden;
     background-color: #0D1117;
 }
@@ -862,7 +861,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         gap: 10px;
     }
     
