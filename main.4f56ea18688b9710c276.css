@@ -603,13 +603,8 @@ textarea {
 @media (max-width: 768px) {
 
   html, body {
-    overflow-x: hidden;
-}
-  * {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
     background-color: #0D1117;
+    overflow-x: hidden;
 }
 
   .flex-wrapper {
@@ -873,7 +868,7 @@ textarea {
         border-radius: 5px;
         color: white;
         padding: 10px;
-        width: 100%;
+        width: 120%;
         font-size: 14px;
         box-sizing: border-box;
     }
