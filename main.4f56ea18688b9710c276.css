@@ -601,6 +601,18 @@ textarea {
 }
 
 @media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #0D1117;
+}
+
   .flex-wrapper {
       flex-direction: column;
       align-items: center;
