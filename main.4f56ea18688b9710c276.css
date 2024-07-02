@@ -611,7 +611,7 @@ textarea {
   /* Second section adjustments */
   .second {
       padding: 20px;
-      min-height: 100vh; /* Ensure minimum height to prevent collapsing */
+      min-height: 170vh; /* Ensure minimum height to prevent collapsing */
   }
 
   .second h2 {
