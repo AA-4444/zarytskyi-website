@@ -130,6 +130,12 @@ html, body {
     width: 30%;
     text-align: center;
     transition: background 0.3s ease, transform 0.1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Ensure content is centered */
+    min-height: 300px; /* Ensure a minimum height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .glassmorphism-card:hover {
@@ -152,6 +158,10 @@ html, body {
     font-size: 14px;
     color: gray;
     line-height: 1.5;
+    flex-grow: 1; /* Ensure the paragraph takes up available space */
+    display: flex;
+    align-items: center; /* Vertically center the paragraph text */
+    justify-content: center; /* Horizontally center the paragraph text */
 }
 
   
