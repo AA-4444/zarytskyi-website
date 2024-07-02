@@ -584,7 +584,7 @@ textarea {
   .flex-wrapper {
       flex-direction: column;
       padding-top: 20px;
-      height: 200vh !important; /* Adjust height to auto for proper content spacing */
+      height: 1200vh !important; /* Adjust height to auto for proper content spacing */
   }
 
   #scene-container {
