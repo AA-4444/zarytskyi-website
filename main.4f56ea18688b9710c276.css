@@ -578,10 +578,13 @@ textarea {
   color: white;
 }
 
+
+
 @media (max-width: 768px) {
   .flex-wrapper {
       flex-direction: column;
       padding-top: 20px;
+      height: auto; /* Adjust height to auto for proper content spacing */
   }
 
   #scene-container {
@@ -605,9 +608,10 @@ textarea {
       margin-top: 10px; /* Add margin for spacing */
   }
 
-    /* Second section adjustments */
-    .second {
+  /* Second section adjustments */
+  .second {
       padding: 20px;
+      min-height: 100vh; /* Ensure minimum height to prevent collapsing */
   }
 
   .second h2 {
@@ -618,6 +622,7 @@ textarea {
   .section-content {
       flex-direction: column; /* Stack cards vertically */
       align-items: center;
+      width: 100%; /* Full width for mobile */
   }
 
   .glassmorphism-card {
@@ -633,5 +638,12 @@ textarea {
       font-size: 0.9rem; /* Smaller font size for mobile */
   }
 
-}
+  /* Add margin between sections to prevent collapsing */
+  .third-section {
+      margin-top: 20px;
+  }
 
+  .contact-section {
+      margin-top: 20px;
+  }
+}
