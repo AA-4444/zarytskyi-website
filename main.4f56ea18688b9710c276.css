@@ -7,26 +7,27 @@ html, body {
     overflow-x: hidden;
   }
   
-  
   .flex-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0D1117;
     height: 100%;
-  }
-  .flex-wrapper p 
-  {
+    padding-top: 80px; /* Add padding to move content down */
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+.flex-wrapper p {
     font-size: 20px;
     color: silver;
-  }
-  
-  #scene-container {
+}
+
+#scene-container {
     height: 80%;
     background-color: #0D1117;
-  }
-  
-  .content {
+}
+
+.content {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -35,19 +36,17 @@ html, body {
     align-items: center;
     background: url('images/IMG_5507.jpg') no-repeat center center/cover;
     animation: fadeIn 2s ease-out;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: white;
     text-transform: uppercase;
     font-size: 3.1rem;
     margin-bottom: 20px;
     animation: fadeInDown 2s;
-  }
+}
 
-
-  
-  button {
+button {
     border: none;
     background-color: #007aff;
     color: white;
@@ -58,18 +57,18 @@ html, body {
     cursor: pointer;
     outline: none;
     animation: fadeInUp 2s;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
-  
-  @keyframes fadeInDown {
+}
+
+@keyframes fadeInDown {
     0% {
       opacity: 0;
       transform: translateY(-20px);
@@ -78,9 +77,9 @@ html, body {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  @keyframes fadeInUp {
+}
+
+@keyframes fadeInUp {
     0% {
       opacity: 0;
       transform: translateY(20px);
@@ -89,7 +88,7 @@ html, body {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
   
   .second {
     height: 90vh;

@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrQkzBNE8aKAwixLkQnepnT1IMXbrrtZtJ6xS3Zj1KHE7P6I+ONb2FgfXLQQ6oI5mI1W7ok8Pa1rRV1MQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        /* Loading screen styles */
-        .loading-screen {
+       .loading-screen {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -28,15 +27,19 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 24px;
             color: white;
-            animation: typing 1.5s steps(10, end) infinite alternate;
+            overflow: hidden; /* Ensures the text is clipped when overflowing */
+            white-space: nowrap; /* Keeps the text on a single line */
+            border-right: 4px solid white; /* Adds a cursor effect */
+            animation: typing 2s steps(10, end) infinite alternate,
+                       blink 0.75s step-end infinite;
         }
         @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 10ch;
-            }
+            from { width: 0; }
+            to { width: 10ch; } /* Adjust the width to fit "Loading..." */
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
         }
         /* Existing styles */
         .rounded-button {
@@ -117,6 +120,7 @@
            <!-- <button onclick="contactMe()">Contact with Me</button>-->
            <a href="#" class="rounded-button">Contact Me <i class="fa-solid fa-chevron-right"></i></a>
         </div>
+      </div>
       </div>
   
       <section class="second">
@@ -312,7 +316,7 @@
         setTimeout(() => {
           document.getElementById('loading-screen').style.display = 'none';
           document.getElementById('main-content').style.display = 'block';
-        }, 3000); // Adjust the delay time as needed (3000 milliseconds = 3 seconds)
+        }, 6000); // (6000 milliseconds = 6 seconds)
       });
     </script>
     <script type="text/javascript" src="main.2e0a34c5be9e65eb0eb8.js"></script>
