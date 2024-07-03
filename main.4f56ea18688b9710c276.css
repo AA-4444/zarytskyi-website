@@ -2,7 +2,8 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    font-family: Inter;
+   /* font-family: Inter; */
+   font-family: 'Orbitron', sans-serif;
     color: #0D1117;
     overflow-x: hidden;
   }
@@ -41,7 +42,7 @@ html, body {
 h1 {
     color: white;
     text-transform: uppercase;
-    font-size: 3.1rem;
+    font-size: 2.7rem;
     margin-bottom: 20px;
     animation: fadeInDown 2s;
 }
@@ -235,7 +236,6 @@ button:hover {
   align-items: center;
   background-color: #0D1117;
   color: white;
-  font-family: Arial, sans-serif;
 }
 
 .contact-section h2 {
@@ -656,7 +656,7 @@ textarea {
   }
 
   .second h2 {
-      font-size: 1.5rem; /* Smaller font size for mobile */
+      font-size: 1.4rem; /* Smaller font size for mobile */
       text-align: center;
   }
 
@@ -717,7 +717,7 @@ textarea {
 }
 
 .grid-item p {
-    font-size: 0.9rem; /* Smaller font size for mobile */
+    font-size: 0.8rem; /* Smaller font size for mobile */
     color: white;
     margin: 0;
 }
@@ -798,7 +798,6 @@ textarea {
   align-items: center;
   background-color: #0D1117;
   color: white;
-  font-family: Arial, sans-serif;
 }
  .glass {
             background: rgba(255, 255, 255, 0.1);
@@ -920,3 +919,172 @@ textarea {
     }
       
     }
+
+    .about {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0D1117;
+      color: white;
+      margin: 0;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+  }
+  .about-me-section {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 20px;
+      width: 80%;
+      text-align: center;
+      transition: background 0.3s ease, transform 0.1s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 350px;
+      box-sizing: border-box;
+  }
+  .about-me-section:hover {
+      transform: scale(1.02);
+  }
+  .about-me-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+  }
+  .about-me-title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  .about-me-description {
+      font-size: 18px;
+      font-weight: 400;
+      color: silver;
+      margin-bottom: 20px;
+  }
+  .rounded-button {
+      display: inline-block;
+      padding: 15px 40px;
+      position: relative;
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 10px;
+      transition: color 0.3s;
+  }
+  .rounded-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 10px;
+      border: 2px solid white;
+      transition: border-color 0.3s, background 0.3s;
+  }
+  .rounded-button:hover::before {
+      background: #007aff;
+      border: 2px solid transparent;
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, 
+                    linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+  }
+  .rounded-button i {
+      margin-left: 10px;
+      transition: transform 0.3s ease, opacity 0.3s;
+      opacity: 1;
+  }
+  .rounded-button:hover i {
+      transform: translateX(5px);
+      opacity: 0;
+  }
+  .rounded-button::after {
+      content: "\f061";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%) translateX(-10px);
+      opacity: 0;
+      transition: transform 0.3s ease, opacity 0.3s;
+  }
+  .rounded-button:hover::after {
+      transform: translateY(-50%) translateX(0);
+      opacity: 1;
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+      body {
+        overflow-x: hidden;
+      }
+      .about-me-section {
+          width: 50%;
+          padding: 15px;
+      }
+      .about-me-title {
+          font-size: 22px;
+      }
+      .about-me-description {
+          font-size: 14px;
+      }
+      .rounded-button {
+          padding: 12px 30px;
+          font-size: 14px;
+      }
+      .rounded-button::before {
+          border-width: 1px;
+      }
+  }
+  @media (max-width: 768px) {
+      .about-me-section {
+          width: 70%;
+          padding: 10px;
+      }
+      .about-me-title {
+          font-size: 20px;
+      }
+      .about-me-description {
+          font-size: 12px;
+      }
+      .rounded-button {
+          padding: 10px 20px;
+          font-size: 12px;
+      }
+      .rounded-button::before {
+          border-width: 1px;
+      }
+  }
+  @media (max-width: 480px) {
+      .about-me-section {
+          width: 90%;
+          padding: 10px;
+      }
+      .about-me-title {
+          font-size: 18px;
+      }
+      .about-me-description {
+          font-size: 12px;
+      }
+      .rounded-button {
+          padding: 8px 15px;
+          font-size: 12px;
+      }
+      .rounded-button::before {
+          border-width: 1px;
+      }
+  }

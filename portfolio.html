@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Privacy Policy</title>
+    <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,7 +11,7 @@
     <style>
         body {
             font-family: 'Orbitron', sans-serif;
-            background-color: #0D1117;
+            background-color: #007aff;
             color: white;
             margin: 0;
             overflow-x: hidden;
@@ -48,7 +48,7 @@
         .marquee {
             display: none;
             width: 100%;
-            background-color: #007aff;
+            background-color: #0D1117;
             overflow: hidden;
             white-space: nowrap;
             box-sizing: border-box;
@@ -72,32 +72,45 @@
             padding: 20px;
             padding-top: 80px; /* Add padding to avoid overlay by marquee */
         }
-        .content h1, .content h2 {
+        .content h1 {
             color: white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .content h2, .content p {
+            color: white;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 20px 0;
         }
         .footer {
             text-align: center;
             padding: 30px;
-            background-color: #0D1117;
+            background-color: #007aff;
         }
-        .icons {
+        .footer .icons {
             display: flex;
             justify-content: center;
             gap: 40px;
             margin-bottom: 15px;
         }
-        .icons a {
+        .footer .icons a {
             text-decoration: none;
             color: white;
             font-size: 25px;
         }
-        .privacy-policy {
+        .footer .privacy-policy {
             display: block;
             margin-bottom: 10px;
-            color: #007bff;
+            color:  #0D1117;
             text-decoration: none;
         }
-        .copyright {
+        .footer .copyright {
             color: white;
         }
         @media (max-width: 768px) {
@@ -108,7 +121,10 @@
                 padding: 10px;
                 padding-top: 80px; /* Add padding to avoid overlay by marquee */
             }
-            .content h1, .content h2 {
+            .content h1 {
+                font-size: 2rem;
+            }
+            .content h2 {
                 font-size: 1.5rem;
             }
             .icons {
@@ -131,49 +147,23 @@
 
     <div id="main-content" style="display: none;">
         <div class="content">
-            <h1>Privacy Policy</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-
-            <h2>1. Important Information and Who We Are</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <h2>2. The Data We Collect About You</h2>
-            <p>We may collect, use, store, and transfer different kinds of personal data about you which we have grouped together as follows:</p>
-            <ul>
-                <li>Identity Data</li>
-                <li>Contact Data</li>
-                <li>Technical Data</li>
-                <li>Usage Data</li>
-                <li>Marketing and Communications Data</li>
-            </ul>
-
-            <h2>3. How is Your Personal Data Collected?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:</p>
-            <ul>
-                <li>Direct interactions. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Automated technologies or interactions. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Third parties or publicly available sources. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
-
-            <h2>4. How We Use Your Personal Data</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua:</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
-
-            <h2>5. Disclosures of Your Personal Data</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <h2>6. Data Security</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <h2>7. Data Retention</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-            <h2>8. Your Legal Rights</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h1>My Portfolio</h1>
+            <div class="line"></div>
+            <h2>October - April 2023-2024</h2>
+            <p>iOS Development</p>
+            <p>Working at DEMAX Digital as an iOS developer. Creating a Speedometer App, working with Apple Map and user location, tracking user speed in different units, displaying travel paths and history, and customizing the speedometer in the app.</p>
+            <div class="line"></div>
+            <h2>September - May 2023-2024</h2>
+            <p>Web Developer</p>
+            <p>Working at TapCon as a Web Developer and Project Manager. Creating e-commerce websites and building the company website. As a Project Manager, overseeing project timelines, coordinating with teams, and ensuring the delivery of high-quality projects on time.</p>
+            <div class="line"></div>
+            <h2>August - April 2023-2024</h2>
+            <p>iOS Developer</p>
+            <p>Working on the Acclaim App, creating it for iOS platforms. Developing an app that helps users acclimate while traveling by providing interesting facts about the country they are in, local tips, and more to enhance their travel experience.</p>
+            <div class="line"></div>
+            <h2>January - March 2022-2023</h2>
+            <p>Web Developer</p>
+            <p>Creating a game website for a small independent company that makes games. Allowing users to purchase games directly from the company.</p>
         </div>
         <div class="footer">
             <div class="icons">
