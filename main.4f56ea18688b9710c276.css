@@ -649,7 +649,7 @@ textarea {
 
   /* Second section adjustments */
   .second {
-      min-height: 170vh; /* Ensure minimum height to prevent collapsing */
+      min-height: 160vh; /* Ensure minimum height to prevent collapsing */
       align-items: center;
       text-align: center;
       
@@ -917,6 +917,9 @@ textarea {
     .contact-btn:hover {
         background-color: #0056b3;
     }
+    .about {
+      height: 100vh;
+    }
       
     }
 
@@ -1090,7 +1093,7 @@ textarea {
         height: 126vh;
       }
       .about {
-        height: 90vh;
+        height: 100vh;
       } 
       .second {
         height: 180vh;
