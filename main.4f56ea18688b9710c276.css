@@ -399,9 +399,11 @@ textarea {
 }
 
 .circle::before {
-    content: '✓';
-    color: black;
-    font-size: 15px;
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: black;
+  font-size: 12px;
 }
 
 .text {
@@ -680,7 +682,7 @@ textarea {
 
   /* Add margin between sections to prevent collapsing */
   .third-section {
-    min-height: 110vh; /* Ensure minimum height to prevent collapsing */
+    min-height: 100vh; /* Ensure minimum height to prevent collapsing */
    text-align: center;
    align-items: center;
 }
@@ -832,6 +834,13 @@ textarea {
             font-size: 18px;
             margin-right: 10px;
         }
+        .circle1::before {
+          content: '\f00c';
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          color: black;
+          font-size: 13px;
+      }
 
         .text {
             flex: 1;
