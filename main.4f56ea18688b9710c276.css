@@ -1112,6 +1112,9 @@ textarea {
     .glass-section {
         display: block;
     }
+    .contact-section-2 {
+      display: none;
+    }
     .form-column {
         width: 100%;
     }
