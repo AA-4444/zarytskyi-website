@@ -1088,6 +1088,15 @@ textarea {
           border-width: 1px;
       }
       .contact-section {
-        height: 120vh;
+        height: 130vh;
+      }
+      .about {
+        height: 110vh;
+      } 
+      .second {
+        height: 180vh;
+      }
+      .glass-section {
+        height: 110vh;
       }
   }
