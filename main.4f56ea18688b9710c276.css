@@ -1087,35 +1087,7 @@ textarea {
       .rounded-button::before {
           border-width: 1px;
       }
+      .contact-section {
+        height: 120vh;
+      }
   }
-  @media (max-width: 480px) {
-    .about-me-section {
-        width: 90%;
-        padding: 10px;
-    }
-    .about-me-title {
-        font-size: 18px;
-    }
-    .about-me-description {
-        font-size: 12px;
-    }
-    .rounded-button {
-        padding: 8px 15px;
-        font-size: 12px;
-    }
-    .rounded-button::before {
-        border-width: 1px;
-    }
-    .contact-section, .glass-section {
-        padding: 20px;
-    }
-    .glass-section {
-        display: block;
-    }
-    .contact-section-2 {
-      display: none;
-    }
-    .form-column {
-        width: 100%;
-    }
-}
