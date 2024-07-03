@@ -1052,7 +1052,7 @@ textarea {
   }
   @media (max-width: 768px) {
       .about-me-section {
-          width: 70%;
+          width: 80%;
           padding: 10px;
       }
       .about-me-title {
@@ -1071,8 +1071,7 @@ textarea {
   }
   @media (max-width: 480px) {
       .about-me-section {
-          width: 90%;
-          padding: 10px;
+          width: 120%;
       }
       .about-me-title {
           font-size: 18px;
@@ -1088,7 +1087,7 @@ textarea {
           border-width: 1px;
       }
       .contact-section {
-        height: 130vh;
+        height: 126vh;
       }
       .about {
         height: 110vh;
