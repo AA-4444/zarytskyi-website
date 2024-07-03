@@ -1088,3 +1088,31 @@ textarea {
           border-width: 1px;
       }
   }
+  @media (max-width: 480px) {
+    .about-me-section {
+        width: 90%;
+        padding: 10px;
+    }
+    .about-me-title {
+        font-size: 18px;
+    }
+    .about-me-description {
+        font-size: 12px;
+    }
+    .rounded-button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .rounded-button::before {
+        border-width: 1px;
+    }
+    .contact-section, .contact-section-2 {
+        padding: 20px;
+    }
+    .contact-section-2 {
+        display: block;
+    }
+    .form-column {
+        width: 100%;
+    }
+}
