@@ -1106,10 +1106,10 @@ textarea {
     .rounded-button::before {
         border-width: 1px;
     }
-    .contact-section, .contact-section-2 {
+    .contact-section, .glass-section {
         padding: 20px;
     }
-    .contact-section-2 {
+    .glass-section {
         display: block;
     }
     .form-column {
