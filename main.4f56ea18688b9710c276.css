@@ -920,6 +920,13 @@ textarea {
     .about {
       height: 100vh;
     }
+    .about-me-image {
+      margin-top: 2%;
+  }
+
+  .rounded-button {
+   margin-bottom: 5%;
+}
       
     }
 
@@ -1055,14 +1062,15 @@ textarea {
   }
   @media (max-width: 768px) {
       .about-me-section {
-          width: 80%;
-          padding: 10px;
+          width: 90%;
+         
       }
       .about-me-title {
           font-size: 20px;
       }
       .about-me-description {
-          font-size: 12px;
+          font-size: 16px;
+         
       }
       .rounded-button {
           padding: 10px 20px;
