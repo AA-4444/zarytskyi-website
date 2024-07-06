@@ -679,7 +679,7 @@ p {
 
 /* Add margin between sections to prevent collapsing */
 .third-section {
-  min-height: 100vh; /* Ensure minimum height to prevent collapsing */
+  height: 100vh; /* Ensure minimum height to prevent collapsing */
   text-align: center;
   align-items: center;
 }
@@ -748,7 +748,7 @@ p {
 }
 
 .line-numbers {
-  padding-right: 5px;
+  padding-right: 10px;
   text-align: right;
   user-select: none;
   color: rgba(255, 255, 255, 0.5);
@@ -758,9 +758,10 @@ p {
 .code {
   color: #ffffff;
   white-space: pre-wrap; /* Allow text to wrap */
-  font-size: 0.8rem; /* Smaller font size for code */
-  line-height: 1.5;
-  padding-left: 10px; /* Adjust padding to align code properly */
+  font-size: 0.5rem; /* Smaller font size for code */
+  white-space: pre-wrap; /* Ensure code text wraps */
+  overflow-wrap: break-word; /* Break long words */
+  word-break: break-all;
 }
 
 .code .keyword {
@@ -1108,12 +1109,21 @@ textarea {
     height: 126vh;
   }
   .about {
-    height: 120vh;
+    height: 90vh;
+    background-color: red;
   } 
   .second {
     height: 190vh;
+  
   }
   .glass-section {
-    height: 120vh;
+    height: 115vh;
+    
+  }
+  .contact-section {
+    height: 100vh; /* Adjust height to auto for proper content spacing */
+  }
+  .third-section {
+    height: 95vh;
   }
 }
