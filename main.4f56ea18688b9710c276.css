@@ -1117,6 +1117,7 @@ textarea {
   }
   .glass-section {
     height: 115vh;
+    background-color: red;
     
   }
   .contact-section {
@@ -1124,6 +1125,5 @@ textarea {
   }
   .third-section {
     height: 80vh;
-    background-color: red;
   }
 }
