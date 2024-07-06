@@ -1123,7 +1123,7 @@ textarea {
     height: 100vh; /* Adjust height to auto for proper content spacing */
   }
   .third-section {
-    height: 90vh;
+    height: 50vh;
     background-color: red;
   }
 }
