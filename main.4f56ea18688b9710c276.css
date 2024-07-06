@@ -1110,13 +1110,14 @@ textarea {
   }
   .about {
     height: 90vh;
+    background-color: red;
   } 
   .second {
     height: 190vh;
   
   }
   .glass-section {
-    height: 115vh;
+    height: 100vh;
     background-color: red;
     
   }
