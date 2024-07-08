@@ -605,6 +605,38 @@ button:hover {
   text-align: center;
   margin-bottom: 5%;
 }
+.portfolio-section {
+  background-color: #0D1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rounded-gradient-box {
+  background: rgb(6,1,83);
+  background: linear-gradient(90deg, rgba(6,1,83,1) 0%, rgba(9,9,121,1) 27%, rgba(0,110,255,1) 100%);
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  color: white;
+  width: 70%;
+  height: 70%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-gradient-box h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+
 
 
 @media (max-width: 768px) {
@@ -915,9 +947,7 @@ textarea {
 .contact-btn:hover {
   background-color: #0056b3;
 }
-.about {
-  height: 100vh;
-}
+
 .about-me-image {
   margin-top: 2%;
 }
@@ -968,34 +998,36 @@ textarea {
   transform: scale(1.02);
 }
 .about-me-image {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 .about-me-title {
-  font-size: 25px;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 .about-me-description {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 400;
   color: silver;
   margin-bottom: 20px;
 }
-.rounded-button {
+.rounded-button1 {
   display: inline-block;
-  padding: 15px 40px;
   position: relative;
+  padding: 15px 10px;
+  width: 25%;
   background-color: transparent;
   color: white;
   text-decoration: none;
   font-size: 16px;
   border-radius: 10px;
   transition: color 0.3s;
+  margin-top: 2%;
 }
-.rounded-button::before {
+.rounded-button1::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1006,7 +1038,7 @@ textarea {
   border: 2px solid white;
   transition: border-color 0.3s, background 0.3s;
 }
-.rounded-button:hover::before {
+.rounded-button1:hover::before {
   background: #007aff;
   border: 2px solid transparent;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, 
@@ -1016,16 +1048,16 @@ textarea {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
 }
-.rounded-button i {
+.rounded-button1 i {
   margin-left: 10px;
   transition: transform 0.3s ease, opacity 0.3s;
   opacity: 1;
 }
-.rounded-button:hover i {
+.rounded-button1:hover i {
   transform: translateX(5px);
   opacity: 0;
 }
-.rounded-button::after {
+.rounded-button1::after {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1036,9 +1068,23 @@ textarea {
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s;
 }
-.rounded-button:hover::after {
+.rounded-button1:hover::after {
   transform: translateY(-50%) translateX(0);
   opacity: 1;
+}
+.rounded-rectangle {
+  background: rgba(0, 0, 0, 0.4); /* Dark glass effect */
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px; /* Reduce left padding */
+  margin-top: 1%;
+  font-family: 'Inter', sans-serif;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Darker shadow */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 25%;
+  text-align: left; /* Align text to the left to look like code */
 }
 
 /* Media Queries for responsiveness */
@@ -1109,7 +1155,7 @@ textarea {
     height: 126vh;
   }
   .about {
-    height: 90vh;
+    height: 100vh;
   } 
   .second {
     height: 190vh;
@@ -1124,5 +1170,36 @@ textarea {
   }
   .third-section {
     height: 80vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    height: 30vh;
+    padding: 20px;
+  }
+
+  .rounded-gradient-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .rounded-gradient-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .rounded-button1 {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .rounded-rectangle {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 14px;
   }
 }
