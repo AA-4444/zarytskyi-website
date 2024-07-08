@@ -1188,17 +1188,18 @@ textarea {
 
   .rounded-gradient-box h2 {
     font-size: 1.4rem;
-    margin-bottom: 15px;
+    margin-bottom: 7%;
   }
 
   .rounded-button1 {
-    width: auto;
+    width: 50%;
     padding: 10px 20px;
     font-size: 14px;
+    margin-bottom: 1%;
   }
 
   .rounded-rectangle {
-    width: auto;
+    width: 50%;
     padding: 10px 20px;
     font-size: 14px;
   }
