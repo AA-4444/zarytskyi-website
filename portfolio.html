@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #007aff;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0D1117;
+            z-index: 9999;
+        }
+        .loading-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            color: white;
+            overflow: hidden; 
+            white-space: nowrap;
+            border-right: 4px solid white;
+            animation: typing 2s steps(10, end) infinite alternate, blink 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 10ch; }
+        }
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+        .marquee {
+            display: none;
+            width: 100%;
+            background-color: #0D1117;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10000;
+        }
+        .marquee-content {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+            color: white;
+            font-size: 16px;
+        }
+        @keyframes marquee {
+            from { transform: translateX(0%); }
+            to { transform: translateX(-100%); }
+        }
+        .content {
+            padding: 20px;
+            padding-top: 80px; /* Add padding to avoid overlay by marquee */
+        }
+        .content h1 {
+            color: white;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .content h2, .content p {
+            color: white;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #007aff;
+        }
+        .footer .icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 15px;
+        }
+        .footer .icons a {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .footer .privacy-policy {
+            display: block;
+            margin-bottom: 10px;
+            color:  #0D1117;
+            text-decoration: none;
+        }
+        .footer .copyright {
+            color: white;
+        }
+        a.underline-link {
+            text-decoration: underline;
+            color: white; /* You can adjust the color if needed */
+        }
+        @media (max-width: 768px) {
+            .marquee-content {
+                font-size: 12px;
+            }
+            .content {
+                padding: 10px;
+                padding-top: 80px; /* Add padding to avoid overlay by marquee */
+            }
+            .content h1 {
+                font-size: 1.6rem !important;
+            }
+            .content h2 {
+                font-size: 1.5rem !important;
+            }
+            .icons {
+                gap: 20px;
+            }
+            .icons a {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+    .content h1 {
+        font-size: 1.6rem !important;
+    }
+
+    .content h2 {
+        font-size: 1.3rem !important;
+    }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <div class="marquee" id="marquee">
+        <div class="marquee-content" id="marquee-content"></div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <div class="content">
+            <h1>My Portfolio</h1>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">October - April 2023-2024</h2>
+            <p style="font-size: 1.2rem;">iOS Development</p>
+            <p style="font-family: 'Inter', sans-serif;">Working at DEMAX Digital as an iOS developer. Creating a Speedometer App, working with Apple Map and user location, tracking user speed in different units, displaying travel paths and history, and customizing the speedometer in the app.</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">September - May 2023-2024</h2>
+            <p style="font-size: 1.2rem;">Web Developer</p>
+            <p style="font-family: 'Inter', sans-serif;">Working at TapCon as a Web Developer and Project Manager. Creating e-commerce websites and building the company website. As a Project Manager, overseeing project timelines, coordinating with teams, and ensuring the delivery of high-quality projects on time.</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">August - April 2023-2024</h2>
+            <p style="font-size: 1.2rem;">iOS Developer</p>
+            <p style="font-family: 'Inter', sans-serif;">Working on the Acclaim App, creating it for iOS platforms. Developing an app that helps users acclimate while traveling by providing interesting facts about the country they are in, local tips, and more to enhance their travel experience.Wroked with Firebase, Signin with Apple,Google and Facebook and Apple Maps/user lcoation</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">March - July 2024</h2>
+            <p style="font-size: 1.2rem;">AVA100</p>
+            <p style="font-family: 'Inter', sans-serif;">Creating Web Site for  <a href="https://ava100.com.ua" class="underline-link">AVA 100</a> a ukranian building company</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">April 2024</h2>
+            <p style="font-size: 1.2rem;">Demo Crypto App</p>
+            <p style="font-family: 'Inter', sans-serif;">Creating small <a href="project1.html" class="underline-link">Crypto App</a> project on SwiftUI ,using API for showing real time value of different crypto</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">February - April 2024</h2>
+            <p style="font-size: 1.2rem;">Speedometer App</p>
+            <p style="font-family: 'Inter', sans-serif;">Creating  <a href="speedometr.html" class="underline-link">Speedometr App</a> using SwiftUI ,working with Apple Maps and Apple location serves to shwoing and track user speed,location and travel distance.With settings options in app for better user experience</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">January - March 2022-2023</h2>
+            <p style="font-size: 1.2rem;">Web Developer</p>
+            <p style="font-family: 'Inter', sans-serif;">Creating a game website for a small independent company that makes games. Allowing users to purchase games directly from the company.</p>
+            <div class="line"></div>
+            <h2 style="font-size: 2rem;">September 2022</h2>
+            <p style="font-size: 1.2rem;">Plant App</p>
+            <p style="font-family: 'Inter', sans-serif;">Creating small <a href="plant.html" class="underline-link">Plant App</a> using SwiftUI ,its small app creating as demo e-commerce app where user can choose and by plants for their home</p>
+        </div>
+        <div class="footer">
+            <div class="icons">
+                <a href="mailto:alik.zaryzkyy@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/alex-zarytskyi-7b2248193/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/AA-4444">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://x.com/Alex34909682">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="pug.html">
+                      <i class="fas fa-paw"></i>
+                    </a>
+            </div>
+            <a href="index.html" class="privacy-policy">Back to home</a>
+            <div class="copyright">© 2024 made by Oleksii Zarytskyi</div>
+        </div>
+    </div>
+
+    <script>
+        // Function to get the current date and time
+        function getCurrentDateTime() {
+            const now = new Date();
+            return now.toLocaleString();
+        }
+
+        // Function to update the marquee content
+        function updateMarqueeContent() {
+            const marqueeContent = document.getElementById('marquee-content');
+            const text = `© 2024 made by Oleksii Zarytskyi all rights reserved. Today: ${getCurrentDateTime()}`;
+            marqueeContent.innerHTML = `${text} &nbsp;&nbsp;&nbsp; ${text}`;
+        }
+
+        // Hide the loading screen and show the marquee line
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                document.getElementById('marquee').style.display = 'block'; // Show marquee
+                updateMarqueeContent();
+                setInterval(updateMarqueeContent, 3000); // Update every 3 seconds
+            }, 6000); // 6000 milliseconds = 6 seconds
+        });
+    </script>
+</body>
+</html>
